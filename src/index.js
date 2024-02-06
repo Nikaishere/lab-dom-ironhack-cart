@@ -28,22 +28,12 @@ function calculateAll() {
     total += updateSubtotal(currentProduct);
   }
   console.log(total);
-}
-// ITERATION 3
-function calculateAll() {
-  const products = document.getElementsByClassName('product');
-  let total = 0;
-
-  for (let i = 0; i < products.length; i++) {
-    let currentProduct = products[i];
-    total += updateSubtotal(currentProduct);
-  }
 
   const totalElement = document.getElementById('total-value');
   if (totalElement) {
     const spanElement = totalElement.querySelector('span');
     if (spanElement) {
-      spanElement.textContent = total.toFixed(2); 
+      spanElement.textContent = total.toFixed(2);
     }
   }
 }
